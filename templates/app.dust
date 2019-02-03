@@ -1,0 +1,210 @@
+<html>
+	<link rel="stylesheet" href="/plex/css/ibm-plex.min.css" />
+	<link rel="stylesheet" href="https://unpkg.com/carbon-components/css/carbon-components.min.css" />
+	<link rel="stylesheet" href="/app.css" />
+<body>
+	<div class="title">Should I eat this mushroom?</div>
+
+{!
+	<div class="choices">
+		<div class="choice">
+			<a data-tile="clickable" id="choice-describe" class="bx--tile bx--tile--clickable" tabindex="0">I can describe it</a>
+		</div>
+		<div class="choice">
+			<a data-tile="clickable" id="choice-picture" class="bx--tile bx--tile--clickable" tabindex="1">I have a picture</a>
+		</div>
+	</div>
+!}
+	<div data-content-switcher class="bx--content-switcher choices" role="tablist" aria-label="Demo switch content">
+	    <button class='bx--content-switcher-btn{@ne key=choice value="vr"} bx--content-switcher--selected{/ne}'
+	    	id="choice-describe" data-target=".demo--panel--opt-1" role="tab" aria-selected="true">
+	      <span>I can describe it</span>
+	    </button>
+	    <button class='bx--content-switcher-btn{@eq key=choice value="vr"} bx--content-switcher--selected{/eq}'
+	    	id="choice-picture" data-target=".demo--panel--opt-2" role="tab">
+	      <span>I have a picture</span>
+	    </button>
+	</div>
+
+	<div class="control-panels">
+		<div class='control-panel{@eq key=choice value="vr"} hidden{/eq}' id="panel-describe">
+			<img src="/images/mushroom_base2.png">
+			<div class="describe-controls">
+				<div class="describe-control" id='control-1'>
+					<div class="describe-control-question">
+						What <span class="control-highlight">color</span> is the mushroom cap?
+					</div>
+					<ul data-dropdown data-value class="bx--dropdown" tabindex="0">
+					  <li class="bx--dropdown-text" id="cap-color">WHITE</li>
+					    <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--dropdown__arrow" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M5 6L0 1 .7.3 5 4.6 9.3.3l.7.7z"></path></svg>
+					  <li>
+					    <ul class="bx--dropdown-list">
+					        <li data-option data-value="all" class="bx--dropdown-item">
+					          <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1">WHITE</a>
+					        </li>
+					        <li data-option data-value="cloudFoundry" class="bx--dropdown-item">
+					          <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1">YELLOW</a>
+					        </li>
+					        <li data-option data-value="staging" class="bx--dropdown-item">
+					          <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1">BROWN</a>
+					        </li>
+					        <li data-option data-value="dea" class="bx--dropdown-item">
+					          <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1">GRAY</a>
+					        </li>
+					        <li data-option data-value="router" class="bx--dropdown-item">
+					          <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1">RED</a>
+					        </li>
+					        <li data-option data-value="router" class="bx--dropdown-item">
+					          <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1">PINK</a>
+					        </li>
+					        <li data-option data-value="router" class="bx--dropdown-item">
+					          <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1">BUFF</a>
+					        </li>
+					        <li data-option data-value="router" class="bx--dropdown-item">
+					          <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1">CINNAMON</a>
+					        </li>
+					    </ul>
+					  </li>
+					</ul>
+				</div>
+				<div class="describe-control" id="control-2">
+					<div class="describe-control-question">
+						What <span class="control-highlight">color</span> are the mushroom gills?
+					</div>
+					<ul data-dropdown data-value class="bx--dropdown" tabindex="0">
+					  <li class="bx--dropdown-text" id="gills-color">WHITE</li>
+					    <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--dropdown__arrow" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M5 6L0 1 .7.3 5 4.6 9.3.3l.7.7z"></path></svg>
+					  <li>
+					    <ul class="bx--dropdown-list">
+					        <li data-option data-value="all" class="bx--dropdown-item">
+					          <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1">WHITE</a>
+					        </li>
+					        <li data-option data-value="cloudFoundry" class="bx--dropdown-item">
+					          <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1">YELLOW</a>
+					        </li>
+					        <li data-option data-value="staging" class="bx--dropdown-item">
+					          <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1">BROWN</a>
+					        </li>
+					        <li data-option data-value="staging" class="bx--dropdown-item">
+					          <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1">BLACK</a>
+					        </li>
+					        <li data-option data-value="dea" class="bx--dropdown-item">
+					          <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1">GRAY</a>
+					        </li>
+					        <li data-option data-value="router" class="bx--dropdown-item">
+					          <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1">RED</a>
+					        </li>
+					        <li data-option data-value="router" class="bx--dropdown-item">
+					          <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1">PINK</a>
+					        </li>
+					        <li data-option data-value="router" class="bx--dropdown-item">
+					          <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1">BUFF</a>
+					        </li>
+					        <li data-option data-value="router" class="bx--dropdown-item">
+					          <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1">CINNAMON</a>
+					        </li>
+					    </ul>
+					  </li>
+					</ul>
+				</div>
+				<div class="describe-control" id="control-3">
+					<div class="describe-control-question">
+						What does it <span class="control-highlight">smell</span> like?
+					</div>
+					<ul data-dropdown data-value class="bx--dropdown" tabindex="0">
+					  <li class="bx--dropdown-text" id="smell">NONE</li>
+					    <svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--dropdown__arrow" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M5 6L0 1 .7.3 5 4.6 9.3.3l.7.7z"></path></svg>
+					  <li>
+					    <ul class="bx--dropdown-list">
+					        <li data-option data-value="all" class="bx--dropdown-item">
+					          <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1">NONE</a>
+					        </li>
+					        <li data-option data-value="cloudFoundry" class="bx--dropdown-item">
+					          <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1">ALMOND</a>
+					        </li>
+					        <li data-option data-value="staging" class="bx--dropdown-item">
+					          <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1">PUNGENT</a>
+					        </li>
+					        <li data-option data-value="dea" class="bx--dropdown-item">
+					          <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1">FOUL</a>
+					        </li>
+					        <li data-option data-value="router" class="bx--dropdown-item">
+					          <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1">SPICY</a>
+					        </li>
+					        <li data-option data-value="router" class="bx--dropdown-item">
+					          <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1">FISHY</a>
+					        </li>
+					        <li data-option data-value="router" class="bx--dropdown-item">
+					          <a class="bx--dropdown-link" href="javascript:void(0)" tabindex="-1">MUSTY</a>
+					        </li>
+					    </ul>
+					  </li>
+					</ul>
+				</div>
+				<div class="commit-section">
+					<button class="bx--btn bx--btn--primary" id="describe-commit" type="button">Well, can I?</button>
+				</div>
+				<div id="describe-error">
+				</div>
+			</div>
+		</div>
+		<div class='panel{@ne key=choice value="vr"} hidden{/ne}' id="panel-picture">
+			<div class="vr-controls">
+				<div class="url-control">
+				<div  class="bx--form-item bx--text-input-wrapper">
+					<label for="image-url-input" class="bx--label">Image URL</label>
+					<div class="image-url">
+						<input id="image-url-input" type="text" class="bx--text-input" placeholder="Type or paste mushroom image URL">
+						<button id="preview-button" class="bx--btn bx--btn--secondary" type="button">Preview</button>
+					</div>
+				</div>
+				</div>
+				<div class="picture-preview-section">
+					<img src="/images/mushroom_base2.png">
+				</div>
+				<div class="vr-commit-section">
+					<button class="bx--btn bx--btn--primary" id="vr-commit" type="button">Well, can I?</button>
+				</div>
+				<div id="vr-error">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="verdict-section">
+		<div class="verdict-title">Verdict</div>
+		<div class="verdict-value"></div>
+		<div class="verdict-panel">
+			<div class="verdict">
+				<div class="verdict-picture">
+					<img src="/images/mushroom_healthy.png">
+				</div>
+				<div class="verdict-text">
+					Tasty Dish
+				</div>
+			</div>
+			<div class="scale">
+				<div class="line">
+				</div>
+				<div class="scale-number hidden">
+					<div class="arrow-up">
+					</div>
+					<div class="scale-number-value">
+					</div>
+				</div>
+			</div>
+			<div class="verdict">
+				<div class="verdict-picture">
+					<img src="/images/mushroom_poison.png">
+				</div>
+				<div class="verdict-text">
+					Emergency Room
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://unpkg.com/carbon-components/scripts/carbon-components.min.js"></script>
+	<script src="/app.js"></script>
+</body>
+</html>

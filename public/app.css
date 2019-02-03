@@ -1,0 +1,218 @@
+/*****************************************************************************
+ * Example app for Think 2019 presentation
+ * Infuse Your Applications with AI
+ * License: MIT
+ * Author: Dejan Glozic 2019
+ * ***************************************************************************/
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 16px;
+	font-weight: 400;
+	color: #152935;
+	background: #FFFFFF;
+	font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.title {
+	margin: 2rem;
+	font-size: 2.5rem;
+	text-align: center;
+}
+
+.choices {
+	display: flex;
+	padding: 0 2rem;
+	justify-content: center;
+}
+
+.choice {
+	padding: 0 2rem;
+}
+
+.hidden#panel-describe {
+	display: none;
+}
+
+.hidden#panel-picture {
+	display: none;
+}
+
+.control-panels {
+	padding: 4rem 2rem;
+}
+
+.control-panel {
+	display: flex;
+}
+
+#panel-describe {
+	justify-content: center;
+}
+
+.describe-controls {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 350px;
+	font-size: 0.875rem;
+}
+
+#panel-describe img {
+	height: 400px;
+}
+
+.describe-control {
+	position: absolute;
+	width: 350px;
+}
+
+.describe-control-question {
+	padding-bottom: 10px;
+}
+
+.control-highlight {
+	background: #efc100;
+	padding: 0 5px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+#control-1 {
+	top: 7px;
+}
+
+#control-2 {
+	top: 113px;
+}
+
+#control-3 {
+	top: 245px;
+}
+
+.commit-section {
+	padding-top: 350px;
+}
+
+#describe-error,
+#vr-error {
+	color: #e0182d;
+}
+
+.vr-controls {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.url-control {
+    width: 700px;
+    margin-left: 80px;
+}
+
+.image-url {
+	display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+#preview-button {
+	margin-left: 14px;
+}
+
+.picture-preview-section {
+
+}
+
+.picture-preview-section img {
+	height: 330px;
+	padding: 20px;
+}
+
+.vr-commit-section {
+	width: 500px;
+	text-align: right;
+}
+
+.verdict-section {
+	background: #f4f7fb;
+}
+
+.verdict-panel {
+	display: flex;
+	padding: 0 2rem 2rem 2rem;
+}
+
+.verdict-title {
+	padding-top: 2rem;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.verdict-value {
+	text-align: center;
+	font-weight: 600;
+	font-size: 1.5rem;
+	color: #5aa700;
+	padding: 1rem 0;
+	height: 2rem;
+}
+
+.verdict-poisonous {
+	color: #e0182d;
+}
+
+.verdict-none {
+	color: #5a6872;
+}
+
+.scale {
+	flex-grow: 1;
+	position: relative;
+}
+
+.line {
+	position: absolute;
+    top: 33px;
+    left: -6px;
+    right: -6px;
+    height: 1px;
+    background: #152935;
+}
+
+.scale-number {
+	position: absolute;
+	top: 35px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.scale-number-value {
+	padding-top: 5px;
+}
+
+.hidden {
+	display: none;
+}
+
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  
+  border-bottom: 12px solid black;
+}
+
+.verdict-picture img {
+	width: 100px;
+}
+
+
+

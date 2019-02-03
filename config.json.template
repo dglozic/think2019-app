@@ -1,0 +1,15 @@
+{
+	"credentials": {
+		"url": "",
+		"username": "",
+		"password": ""
+	},
+	"scoring": {
+		"url": ""
+	},
+	"watson_vr": {
+		"model_id": "",
+		"version": "",
+		"iam_apikey": ""
+	}
+}
