@@ -202,6 +202,13 @@
 				</div>
 			</div>
 		</div>
+		<div class="disclaimer">
+			<div class="inner">
+			DISCLAIMER: This app accompanies a conference presentation. It has not been designed for use in
+			real-life situations. Any action you take upon the information on this website is strictly at your own risk,
+			and we are not liable for any losses or damages in connection with its use.
+			</div>
+		</div>
 	</div>
 
 	<script src="https://unpkg.com/carbon-components/scripts/carbon-components.min.js"></script>

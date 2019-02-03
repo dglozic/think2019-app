@@ -214,5 +214,16 @@ body {
 	width: 100px;
 }
 
+.disclaimer {
+	display: flex;
+	justify-content: center;
+}
+
+.disclaimer .inner {
+	width: 800px;
+	color: #5a6872;
+	font-size: 12px;
+	line-height: 1.4;
+}
 
 
