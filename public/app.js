@@ -140,7 +140,6 @@
 				verdictValue.classList.add("verdict-none");
 				verdictValue.innerHTML = "Probably not a mushroom";
 				scaleNumber.classList.add("hidden");
-				console.log("VERDICT: Not a mushroom");
 				return;
 			}
 			scaleNumber.classList.remove("hidden");
@@ -155,7 +154,6 @@
 			scaleNumber.style.left = `calc(${100 * probabilityPosition}% - 20px)`;
 			var rounded = Math.round( probabilityValue * 1000 ) / 10;
 			scaleNumberValue.innerHTML = rounded + "%";
-			console.log("VERDICT: " + JSON.stringify(result));
 			verdictValue.innerHTML = result.winningClass;
 			if (result.winningClass === "EDIBLE") {
 				verdictValue.classList.remove("verdict-poisonous");

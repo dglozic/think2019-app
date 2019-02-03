@@ -1,0 +1,10 @@
+---
+applications:
+- name: Think 2019 Mushroom Detection
+  host: mushroomtest
+  memory: 512M
+  disk_quota: 1G
+  instances: 3
+  path: .
+  command: node --max-http-header-size=32768 index.js
+  buildpack: sdk-for-nodejs

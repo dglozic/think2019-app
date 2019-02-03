@@ -1,0 +1,12 @@
+/.sass-cache/
+/node_modules/
+/sass/
+/test/
+/.git/
+/.gitignore
+/.project
+/Gruntfile.js
+/README.md
+/.babelrc_readme
+/dap-deploy/
+/dap-helm/

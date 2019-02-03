@@ -13,7 +13,7 @@ const dust = require("dustjs-helpers");
 const controller = require('./controllers/controller');
 const apiController = require('./controllers/api-controller');
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 

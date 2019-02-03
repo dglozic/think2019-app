@@ -21,14 +21,11 @@ module.exports.scoreDescribe = function(req, res) {
 	var gillsColor = req.query.gills_color;
 	var smell = req.query.smell;
 
-	console.log(`API: ${capColor}, ${gillsColor}, ${smell}`);
-
 	_getToken(function(err, token) {
 		if (err) {
 			res.status(500).send(err.message);
 			return;
 		}
-		console.log("TOKEN: " + token);
 		_score(capColor, gillsColor, smell, token, function(err2, result) {
 			if (err) {
 				res.status(500).send(err.message);
@@ -155,7 +152,6 @@ module.exports.scoreVR = function(req, res) {
 			res.status(500).send(err2.message);
 			return;
 		}
-		console.log(JSON.stringify(response, null, 2));
 
 		const probability = [
 			response.images[0].classifiers[0].classes[0].score,
