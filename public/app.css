@@ -43,7 +43,7 @@ body {
 }
 
 .control-panels {
-	padding: 4rem 2rem;
+	padding: 4rem 2rem 2rem;
 }
 
 .control-panel {
@@ -210,11 +210,16 @@ body {
   border-bottom: 12px solid black;
 }
 
+.verdict {
+	font-weight: 600;
+}
+
 .verdict-picture img {
 	width: 100px;
 }
 
 .disclaimer {
+	margin-top: -20px;
 	display: flex;
 	justify-content: center;
 }

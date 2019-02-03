@@ -142,7 +142,7 @@
 					</ul>
 				</div>
 				<div class="commit-section">
-					<button class="bx--btn bx--btn--primary" id="describe-commit" type="button">Well, can I?</button>
+					<button class="bx--btn bx--btn--primary" id="describe-commit" type="button">Well, should I?</button>
 				</div>
 				<div id="describe-error">
 				</div>
@@ -163,7 +163,7 @@
 					<img src="/images/mushroom_base2.png">
 				</div>
 				<div class="vr-commit-section">
-					<button class="bx--btn bx--btn--primary" id="vr-commit" type="button">Well, can I?</button>
+					<button class="bx--btn bx--btn--primary" id="vr-commit" type="button">Well, should I?</button>
 				</div>
 				<div id="vr-error">
 				</div>
