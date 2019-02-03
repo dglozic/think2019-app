@@ -1,5 +1,5 @@
 # think2019-app
-App used to demo IBM Watson Studio AI training for a [Think 2019 presentation](https://myibm.ibm.com/events/think/all-sessions/session/6975A).
+App used to demo IBM Watson Studio AI training for a [Think 2019 presentation](https://myibm.ibm.com/events/think/all-sessions/session/6975A). It uses both IBM Watson Machine Learning and IBM Watson Visual Recognition to detect if a mushroom is edible or poisonous. The app is deployed in IBM Cloud at (https://mushroomtest.mybluemix.net).
 
 ## Requirements
 This is a Node.js application and requires Node v8 or higher.
