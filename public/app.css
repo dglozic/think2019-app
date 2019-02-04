@@ -52,6 +52,7 @@ body {
 
 #panel-describe {
 	justify-content: center;
+	position: relative;
 }
 
 .describe-controls {
@@ -104,6 +105,7 @@ body {
 }
 
 .vr-controls {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -229,6 +231,21 @@ body {
 	color: #5a6872;
 	font-size: 12px;
 	line-height: 1.4;
+}
+
+.trained-by {
+	font-size: 12px;
+    position: absolute;
+    left: 20px;
+   	color: #5a6872;
+}
+
+.powered-by {
+	font-size: 12px;
+	position: absolute;
+	bottom: 0;
+	right: 20px;
+	color: #5a6872;
 }
 
 

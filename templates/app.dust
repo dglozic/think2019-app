@@ -147,6 +147,9 @@
 				<div id="describe-error">
 				</div>
 			</div>
+			<div class="powered-by">
+				Powered by <a href="https://www.ibm.com/cloud/machine-learning">IBM Watson Machine Learning</a>
+			</div>
 		</div>
 		<div class='panel{@ne key=choice value="vr"} hidden{/ne}' id="panel-picture">
 			<div class="vr-controls">
@@ -164,10 +167,14 @@
 				</div>
 				<div class="vr-commit-section">
 					<button class="bx--btn bx--btn--primary" id="vr-commit" type="button">Well, should I?</button>
+					<span class="powered-by">Powered by <a href="https://www.ibm.com/cloud/watson-visual-recognition">IBM Watson Visual Recognition</a></span>
 				</div>
 				<div id="vr-error">
 				</div>
 			</div>
+		</div>
+		<div class="trained-by">
+			Trained by <a href="https://www.ibm.com/cloud/watson-studio">IBM Watson Studio</a>
 		</div>
 	</div>
 
@@ -204,8 +211,8 @@
 		</div>
 		<div class="disclaimer">
 			<div class="inner">
-			DISCLAIMER: This app accompanies a conference presentation. It has not been designed for use in
-			real-life situations. Any action you take upon the information on this website is strictly at your own risk,
+			DISCLAIMER: This app accompanies a conference presentation. It has not been designed for use in 
+			real-life situations. Any action you take upon the information on this website is strictly at your own risk, 
 			and we are not liable for any losses or damages in connection with its use.
 			</div>
 		</div>
