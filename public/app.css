@@ -104,6 +104,10 @@ body {
 	color: #e0182d;
 }
 
+#panel-picture {
+	margin-top: -20px;
+}
+
 .vr-controls {
 	position: relative;
 	display: flex;
