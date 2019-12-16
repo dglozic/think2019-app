@@ -24,23 +24,6 @@
 			location.href = "/vr";
 		});
 
-		/*
-
-		function _selectDescribe() {
-			describe.classList.add("bx--content-switcher--selected");
-			describePanel.classList.remove("hidden");
-			picture.classList.remove("bx--content-switcher--selected");
-			picturePanel.classList.add("hidden");
-		}
-
-		function _selectPicture() {
-			describe.classList.remove("bx--content-switcher--selected");
-			describePanel.classList.add("hidden");
-			picture.classList.add("bx--content-switcher--selected");
-			picturePanel.classList.remove("hidden");
-		}
-		*/
-
 		var describeCommit = document.querySelector("#describe-commit");
 		var capColor = document.querySelector("#cap-color");
 		var gillsColor = document.querySelector("#gills-color");

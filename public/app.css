@@ -13,9 +13,17 @@ html {
 body {
 	font-size: 16px;
 	font-weight: 400;
-	color: #152935;
+	color: #272727;
 	background: #FFFFFF;
 	font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+a {
+	color: #0f62fe;
+}
+
+a:hover {
+	color: #054ada;
 }
 
 .title {
@@ -77,7 +85,7 @@ body {
 }
 
 .control-highlight {
-	background: #efc100;
+	background: #f1c21b;
 	padding: 0 5px;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -101,7 +109,7 @@ body {
 
 #describe-error,
 #vr-error {
-	color: #e0182d;
+	color: #da1e28;
 }
 
 #panel-picture {
@@ -146,7 +154,7 @@ body {
 }
 
 .verdict-section {
-	background: #f4f7fb;
+	background: #f4f4f4;
 }
 
 .verdict-panel {
@@ -164,17 +172,17 @@ body {
 	text-align: center;
 	font-weight: 600;
 	font-size: 1.5rem;
-	color: #5aa700;
+	color: #24a148;
 	padding: 1rem 0;
 	height: 2rem;
 }
 
 .verdict-poisonous {
-	color: #e0182d;
+	color: #da1e28;
 }
 
 .verdict-none {
-	color: #5a6872;
+	color: #525252;
 }
 
 .scale {
@@ -188,7 +196,7 @@ body {
     left: -6px;
     right: -6px;
     height: 1px;
-    background: #152935;
+    background: #272727;
 }
 
 .scale-number {
@@ -232,7 +240,7 @@ body {
 
 .disclaimer .inner {
 	width: 800px;
-	color: #5a6872;
+	color: #6f6f6f;
 	font-size: 12px;
 	line-height: 1.4;
 }
@@ -241,7 +249,7 @@ body {
 	font-size: 12px;
     position: absolute;
     left: 20px;
-   	color: #5a6872;
+   	color: #6f6f6f;
 }
 
 .powered-by {
@@ -249,7 +257,7 @@ body {
 	position: absolute;
 	bottom: 0;
 	right: 20px;
-	color: #5a6872;
+	color: #6f6f6f;
 }
 
 

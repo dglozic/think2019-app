@@ -1,8 +1,9 @@
 {
 	"credentials": {
 		"url": "",
-		"username": "",
-		"password": ""
+		"username": "bx",
+		"password": "bx",
+		"apikey": ""
 	},
 	"scoring": {
 		"url": ""

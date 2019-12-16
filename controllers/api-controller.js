@@ -38,14 +38,14 @@ module.exports.scoreDescribe = function(req, res) {
 
 function _getToken(callback) {
 	const options = {
-		url: `${config.credentials.url}/v3/identity/token`,
+		url: "https://iam.cloud.ibm.com/identity/token",
 		headers: {
 			"Authorization": "Basic " + btoa((config.credentials.username + ":" + config.credentials.password)),
-			"Content-Type": "application/json;charset=UTF-8"
+			"Content-Type": "application/x-www-form-urlencoded"
 		},
-		json: true
+		body: "apikey=" + config.credentials.apikey + "&grant_type=urn:ibm:params:oauth:grant-type:apikey"
 	};
-	request.get(options, function(err, response, result) {
+	request.post(options, function(err, response, result) {
 		if (err) {
 			console.log(err.message);
 			callback(err);
@@ -54,10 +54,12 @@ function _getToken(callback) {
 		if (response.statusCode !== 200) {
 			const message = "Unexpected return code from WML Auth: " + response.statusCode;
 			console.log(message);
+			console.log(response.body);
 			callback(new Error(message));
 			return;
 		}
-		callback(null, result.token);
+		const iamToken = JSON.parse(result).access_token;
+		callback(null, iamToken);
 	});
 }
 
